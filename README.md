@@ -1,72 +1,103 @@
 # ☕ Java & DSA Master Blueprint
 
-Welcome to the **Java & DSA Master Blueprint**! This repository is a comprehensive learning and reference suite designed for developers mastering Java language syntax, core Data Structures and Algorithms (DSA), and standard LeetCode coding interview problems.
+Welcome to the **Java & DSA Master Blueprint**! This repository is a comprehensive learning curriculum and implementation suite designed for mastering Java language core concepts, foundational Data Structures & Algorithms (DSA), and standard LeetCode coding interview problems.
 
 > 🚀 **Designed for the Feed:** This repository is structured to document learning progress, highlight clean-code practices, and serve as a complete cheatsheet to share with the developer community.
 
 ---
 
-## 📂 Repository Structure
+## 📂 Directory Structure
 
-The repository is modularly organized into three core areas:
-*   **`notes/`**: Conceptual reference materials, including a complete syntax and methods cheatsheet.
-*   **`dsa/`**: Production-grade implementations of fundamental data structures and algorithmic routines.
-*   **`leetcode/`**: Solved coding challenges with optimized runtime characteristics and complexity notes.
+The repository is organized into distinct tracks for theory, implementations, and problem-solving:
 
 ```text
 java-dsa/
 ├── README.md
-├── notes/
-│   └── java-cheatsheet.md
-├── dsa/
-│   ├── SinglyLinkedList.java
-│   ├── Stack.java
-│   └── BinarySearch.java
-└── leetcode/
-    ├── TwoSum.java
-    ├── ValidParentheses.java
-    └── ReverseList.java
+├── notes/                   # 📝 Full Java Theory Guides
+│   ├── java-cheatsheet.md   # 01. Language Basics
+│   ├── 02_java_oop.md       # 02. OOP Design & 4 Pillars
+│   ├── 03_java_collections.md # 03. Collections Framework
+│   ├── 04_java_exceptions_io.md # 04. Exception Handling & File I/O
+│   └── 05_java_multithreading.md # 05. Multithreading & Thread Pools
+│
+├── dsa/                     # 📊 Production-Grade DSA Code
+│   ├── linear/              # Linear Structures
+│   │   ├── SinglyLinkedList.java
+│   │   ├── DoublyLinkedList.java
+│   │   ├── Stack.java
+│   │   └── Queue.java
+│   ├── trees/               # Hierarchical Structures
+│   │   └── BinarySearchTree.java
+│   ├── graphs/              # Network Structures
+│   │   └── Graph.java
+│   ├── searching/           # Search Routines
+│   │   └── BinarySearch.java
+│   └── sorting/             # Sorting Algorithms
+│       └── SortingAlgorithms.java
+│
+└── leetcode/                # 🎯 Curated Interview Solutions
+    ├── TwoSum.java          # HashMap Lookups
+    ├── ValidAnagram.java    # Array buckets / frequency hashing
+    ├── ValidParentheses.java # Stack LIFO validation
+    ├── ReverseList.java     # Linked list swaps (Iterative & Recursive)
+    ├── InvertBinaryTree.java # BST DFS tree inversion
+    └── ClimbingStairs.java  # 1D Dynamic Programming
 ```
 
 ---
 
 ## 📚 Curriculum Index
 
-### 1. [☕ Java Basics Cheatsheet](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/java-cheatsheet.md)
-A consolidated, high-density syntax guide containing:
-*   **Boilerplate & Output:** Class entry points, printing methods (`print`, `println`, `printf`).
-*   **Scanner Input:** Reading keyboard primitives and strings.
-*   **Variables & Data Types:** Primitives size/range boundaries and explicit narrowing type casting.
-*   **Control Flow & Loops:** Conditionals, Ternary, Switch-case, For, While, and Enhanced For-each loops.
-*   **Objects & Functions:** Overloaded signatures, recursive factorials, and standard `String` and `Math` class methods.
+### 1. 📝 Full Java Reference Guides (`notes/`)
+
+Detailed cheatsheets with sample code blocks and complexity analysis:
+1.  **[01_java_basics.md](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/java-cheatsheet.md):** Variables, input scanning, operators, escape sequences, casting, control flow, loops, methods, arrays, `String`, and `Math` classes.
+2.  **[02_java_oop.md](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/02_java_oop.md):** Core classes/objects, constructors, Encapsulation, Inheritance, Polymorphism, Abstraction, abstract classes, and Interfaces.
+3.  **[03_java_collections.md](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/03_java_collections.md):** Collections framework hierarchy (`List`, `Set`, `Map`, `Queue`), concrete implementations (`ArrayList`, `LinkedList`, `HashSet`, `HashMap`, `PriorityQueue`), and time complexity matrices.
+4.  **[04_java_exceptions_io.md](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/04_java_exceptions_io.md):** Error exception hierarchy (checked vs. unchecked), try-catch-finally blocks, custom exception classes, and `BufferedReader`/`FileWriter` streams.
+5.  **[05_java_multithreading.md](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/05_java_multithreading.md):** Async threads creation (`Thread` extension vs. `Runnable` implementation), thread life-cycle, monitor synchronization blocks, and modern `ExecutorService` thread pooling.
 
 ---
 
-### 2. [📊 Core Data Structures & Algorithms](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/dsa)
+### 2. 📊 Full Data Structures & Algorithms (`dsa/`)
 
-Production-grade Java implementations of fundamental computer science concepts:
+Modular, self-contained implementations of core computer science structures:
 
-| File | Concept | Complexity | Operations / Highlights |
-| :--- | :--- | :--- | :--- |
-| **[SinglyLinkedList.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/dsa/SinglyLinkedList.java)** | Linked Lists | $O(N)$ insertion/deletion | Single node structures, sequential transversals, element-deletion. |
-| **[Stack.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/dsa/Stack.java)** | LIFO Buffers | $O(1)$ push/pop | Stack array representation, Overflow/Underflow error protection. |
-| **[BinarySearch.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/dsa/BinarySearch.java)** | Search Efficiency | $O(\log N)$ search | Iterative vs. Recursive implementations on sorted arrays. |
+| Category | File | Description | Complexity | Operations Covered |
+| :--- | :--- | :--- | :--- | :--- |
+| **Linear** | [SinglyLinkedList.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/dsa/linear/SinglyLinkedList.java) | Singly Linked List | $O(N)$ insertion/deletion | Head/tail append, search and element removal. |
+| **Linear** | [DoublyLinkedList.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/dsa/linear/DoublyLinkedList.java) | Doubly Linked List | $O(N)$ insertion/deletion | Prev/next node link, forward and backward traversal. |
+| **Linear** | [Stack.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/dsa/linear/Stack.java) | LIFO Buffer | $O(1)$ push/pop | Array buffer representation, Overflow/Underflow safety checks. |
+| **Linear** | [Queue.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/dsa/linear/Queue.java) | Circular FIFO Queue | $O(1)$ enqueue/dequeue | Head/rear pointer modulo circular queue. |
+| **Trees** | [BinarySearchTree.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/dsa/trees/BinarySearchTree.java) | Binary Search Tree | $O(\log N)$ (avg) search/insert | Insertion, value lookup, DFS traversals (inorder, preorder, postorder). |
+| **Graphs** | [Graph.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/dsa/graphs/Graph.java) | Network Adjacency | $O(V + E)$ traversals | Graph adjacency lists representation, BFS and DFS traversals. |
+| **Searching**| [BinarySearch.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/dsa/searching/BinarySearch.java) | Binary Search | $O(\log N)$ lookup | Iterative vs. recursive lookups on sorted arrays. |
+| **Sorting** | [SortingAlgorithms.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/dsa/sorting/SortingAlgorithms.java) | Sorting Routines | Variable sorting speeds | Bubble Sort, Selection Sort, Insertion Sort ($O(N^2)$), Merge Sort ($O(N \log N)$), and Quick Sort. |
 
 ---
 
-### 3. [🎯 Curated LeetCode Exercises](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode)
+### 3. 🎯 Curated LeetCode Exercises (`leetcode/`)
 
-Optimized solutions to standard interview questions:
+Optimized solutions to standard coding interview questions:
 
 *   **[TwoSum.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/TwoSum.java) (LeetCode 1 - Easy)**
     *   *Technique:* Single-pass `HashMap` lookup.
     *   *Complexity:* $O(N)$ Time | $O(N)$ Space.
+*   **[ValidAnagram.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/ValidAnagram.java) (LeetCode 242 - Easy)**
+    *   *Technique:* Bucket hash frequency array mapping.
+    *   *Complexity:* $O(N)$ Time | $O(1)$ Space.
 *   **[ValidParentheses.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/ValidParentheses.java) (LeetCode 20 - Easy)**
-    *   *Technique:* Dynamic LIFO stack matching.
+    *   *Technique:* LIFO stack matching.
     *   *Complexity:* $O(N)$ Time | $O(N)$ Space.
 *   **[ReverseList.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/ReverseList.java) (LeetCode 206 - Easy)**
-    *   *Technique:* Multi-pointer iterative swap & call-stack recursive pointers.
+    *   *Technique:* Pointer swapping (iterative) vs call-stack recursion.
     *   *Complexity:* $O(N)$ Time | $O(1)$ Space (Iterative).
+*   **[InvertBinaryTree.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/InvertBinaryTree.java) (LeetCode 226 - Easy)**
+    *   *Technique:* DFS recursive swap.
+    *   *Complexity:* $O(N)$ Time | $O(H)$ Call-stack Space.
+*   **[ClimbingStairs.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/ClimbingStairs.java) (LeetCode 70 - Easy)**
+    *   *Technique:* Space-optimized Dynamic Programming.
+    *   *Complexity:* $O(N)$ Time | $O(1)$ Space.
 
 ---
 
@@ -76,14 +107,20 @@ Verify implementations locally by compiling and executing the test headers:
 
 ```bash
 # 1. Compile all source files
-javac dsa/*.java leetcode/*.java
+javac dsa/linear/*.java dsa/trees/*.java dsa/graphs/*.java dsa/searching/*.java dsa/sorting/*.java leetcode/*.java
 
-# 2. Run Linked List test suite
-java dsa.SinglyLinkedList
+# 2. Run Queue test suite
+java dsa.linear.Queue
 
-# 3. Run Stack test suite
-java dsa.Stack
+# 3. Run Binary Search Tree suite
+java dsa.trees.BinarySearchTree
 
-# 4. Run LeetCode TwoSum test suite
-java leetcode.TwoSum
+# 4. Run Sorting Algorithms suite
+java dsa.sorting.SortingAlgorithms
+
+# 5. Run Graph traversals suite
+java dsa.graphs.Graph
+
+# 6. Run LeetCode Invert Tree suite
+java leetcode.InvertBinaryTree
 ```

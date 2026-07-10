@@ -1,4 +1,4 @@
-package dsa;
+package dsa.linear;
 
 public class Stack {
     private int maxSize;
