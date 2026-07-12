@@ -20,6 +20,18 @@ java-dsa/
 │   ├── 04_java_exceptions_io.md # 04. Exception Handling & File I/O
 │   └── 05_java_multithreading.md # 05. Multithreading & Thread Pools
 │
+├── java_demos/              # ☕ Executable Java Concept Demos
+│   ├── oop/
+│   │   └── OOPDemo.java     # OOP Principles
+│   ├── collections/
+│   │   └── CollectionsDemo.java # List, Set, Map & PriorityQueue
+│   ├── exceptions/
+│   │   └── ExceptionsDemo.java # Exception Handling & Custom errors
+│   ├── io/
+│   │   └── IODemo.java     # Buffered File Readers/Writers
+│   └── concurrency/
+│       └── ConcurrencyDemo.java # Spawning Threads, Sync & Pools
+│
 ├── dsa/                     # 📊 Production-Grade DSA Code
 │   ├── linear/              # Linear Structures
 │   │   ├── SinglyLinkedList.java
@@ -49,14 +61,17 @@ java-dsa/
 
 ## 📚 Curriculum Index
 
-### 1. 📝 Full Java Reference Guides (`notes/`)
+### 1. 📝 Full Java Reference Guides & Executable Demos (`notes/` & `java_demos/`)
 
-Detailed cheatsheets with sample code blocks and complexity analysis:
-1.  **[01_java_basics.md](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/java-cheatsheet.md):** Variables, input scanning, operators, escape sequences, casting, control flow, loops, methods, arrays, `String`, and `Math` classes.
-2.  **[02_java_oop.md](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/02_java_oop.md):** Core classes/objects, constructors, Encapsulation, Inheritance, Polymorphism, Abstraction, abstract classes, and Interfaces.
-3.  **[03_java_collections.md](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/03_java_collections.md):** Collections framework hierarchy (`List`, `Set`, `Map`, `Queue`), concrete implementations (`ArrayList`, `LinkedList`, `HashSet`, `HashMap`, `PriorityQueue`), and time complexity matrices.
-4.  **[04_java_exceptions_io.md](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/04_java_exceptions_io.md):** Error exception hierarchy (checked vs. unchecked), try-catch-finally blocks, custom exception classes, and `BufferedReader`/`FileWriter` streams.
-5.  **[05_java_multithreading.md](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/05_java_multithreading.md):** Async threads creation (`Thread` extension vs. `Runnable` implementation), thread life-cycle, monitor synchronization blocks, and modern `ExecutorService` thread pooling.
+Detailed cheatsheets paired with corresponding runnable examples:
+
+| Module | Core Concept Guide | Runnable Code Implementation | Concepts Demonstrated |
+| :--- | :--- | :--- | :--- |
+| **01** | **[Language Basics](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/java-cheatsheet.md)** | Included in Cheat Sheet | Variables, Input scanning, Operators, Type casting, Arrays. |
+| **02** | **[OOP Principles](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/02_java_oop.md)** | **[OOPDemo.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/java_demos/oop/OOPDemo.java)** | Interface execution, encapsulation accessors, polymorphism overrides, abstraction abstract classes. |
+| **03** | **[Collections Framework](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/03_java_collections.md)** | **[CollectionsDemo.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/java_demos/collections/CollectionsDemo.java)** | `ArrayList` indexing, `HashSet` duplicate filtering, `HashMap` keys, `PriorityQueue` Min-Heap polls. |
+| **04** | **[Exceptions & I/O](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/04_java_exceptions_io.md)** | **[ExceptionsDemo.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/java_demos/exceptions/ExceptionsDemo.java)**, **[IODemo.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/java_demos/io/IODemo.java)** | Try-catch-finally, checked exceptions vs. runtimes, custom error throwing, `BufferedReader`/`FileWriter`. |
+| **05** | **[Multithreading](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/notes/05_java_multithreading.md)** | **[ConcurrencyDemo.java](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/java_demos/concurrency/ConcurrencyDemo.java)** | Thread/Runnable runs, concurrent monitor synchronization locks, `ExecutorService` fixed thread pooling. |
 
 ---
 
@@ -162,15 +177,12 @@ Solutions are grouped logically into compilation classes inside the `leetcode/` 
 Verify implementations locally by compiling and executing the test suites:
 
 ```bash
-# Compile everything
-javac dsa/linear/*.java dsa/trees/*.java dsa/graphs/*.java dsa/searching/*.java dsa/sorting/*.java leetcode/*.java
+# 1. Compile all source files
+javac java_demos/**/*.java dsa/linear/*.java dsa/trees/*.java dsa/graphs/*.java dsa/searching/*.java dsa/sorting/*.java leetcode/*.java
 
-# Run LeetCode Suite tests
-java leetcode.Level1Beginner
-java leetcode.Level2Arrays
-java leetcode.Level3Strings
-java leetcode.Level4Searching
-java leetcode.Level5Recursion
-java leetcode.Level6Intermediate
-java leetcode.HardChallenges
+# 2. Run Java OOP Demo (single-file execution)
+java java_demos/oop/OOPDemo.java
+
+# 3. Run Java Concurrency Demo (single-file execution)
+java java_demos/concurrency/ConcurrencyDemo.java
 ```
