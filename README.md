@@ -47,14 +47,20 @@ java-dsa/
 │   └── sorting/             # Sorting Algorithms
 │       └── SortingAlgorithms.java
 │
-└── leetcode/                # 🎯 Curated LeetCode Solutions (60 Problems)
+└── leetcode/                # 🎯 Curated LeetCode Solutions (97 Problems)
     ├── Level1Beginner.java  # Problems 1-10 (Absolute Beginner)
     ├── Level2Arrays.java    # Problems 11-20 (Array basics)
     ├── Level3Strings.java   # Problems 21-30 (String operations)
     ├── Level4Searching.java  # Problems 31-35 (Binary search variations)
     ├── Level5Recursion.java  # Problems 36-40 (Backtracking/Recursion basics)
     ├── Level6Intermediate.java # Problems 41-50 (Intermediate DP/Arrays)
-    └── HardChallenges.java  # Problems 51-60 (Advanced Backtracking/Math)
+    ├── HardChallenges.java  # Problems 51-60 (Advanced Backtracking/Math)
+    # --- Advanced Topic Groups (37 Problems) ---
+    ├── IntervalChallenges.java # Problems 61-67 (Interval merges & boundaries)
+    ├── StackSimulationChallenges.java # Problems 68-79 (Advanced Stack, Queues & Scheduling)
+    ├── StringParsingChallenges.java # Problems 80-84 (Regex, equation parsing, masking)
+    ├── BinarySearchPointersChallenges.java # Problems 85-91 (Matrix searches & dynamic pointers)
+    └── MatrixSimulationChallenges.java # Problems 92-97 (Diagonal traverses, Game of Life, spiral matrices)
 ```
 
 ---
@@ -92,83 +98,130 @@ Modular, self-contained implementations of core computer science structures:
 
 ---
 
-### 3. 🎯 Curated LeetCode Solutions Index (60 Problems)
+### 3. 🎯 Curated LeetCode Solutions Index (97 Problems)
 
 Solutions are grouped logically into compilation classes inside the `leetcode/` directory:
 
 #### 🟢 [Level 1: Absolute Beginner](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/Level1Beginner.java) (Problems 1–10)
-*   **1. Fizz Buzz (#412)** $\rightarrow$ Conditional loops
-*   **2. Palindrome Number (#9)** $\rightarrow$ Math reversion
-*   **3. Steps to Reduce to Zero (#1342)** $\rightarrow$ Bit checks / conditionals
-*   **4. Richest Customer Wealth (#1672)** $\rightarrow$ 2D array row sum
-*   **5. Running Sum of 1D Array (#1480)** $\rightarrow$ Prefix cumulative array sums
-*   **6. Even Number of Digits (#1295)** $\rightarrow$ Int digit string conversion
-*   **7. Shuffle the Array (#1470)** $\rightarrow$ Sub-array interleaving
-*   **8. Concatenation of Array (#1929)** $\rightarrow$ Array doubling copies
-*   **9. Build Array from Permutation (#1920)** $\rightarrow$ In-place math representation
-*   **10. Kids With Greatest Candies (#1431)** $\rightarrow$ Iterative comparisons
+*   **1. Fizz Buzz (#412)**
+*   **2. Palindrome Number (#9)**
+*   **3. Steps to Reduce to Zero (#1342)**
+*   **4. Richest Customer Wealth (#1672)**
+*   **5. Running Sum of 1D Array (#1480)**
+*   **6. Even Number of Digits (#1295)**
+*   **7. Shuffle the Array (#1470)**
+*   **8. Concatenation of Array (#1929)**
+*   **9. Build Array from Permutation (#1920)**
+*   **10. Kids With Greatest Candies (#1431)**
 
 #### 🟢 [Level 2: Arrays](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/Level2Arrays.java) (Problems 11–20)
-*   **11. Two Sum (#1)** $\rightarrow$ HashMap lookups ($O(N)$ Time)
-*   **12. Best Time to Buy & Sell Stock (#121)** $\rightarrow$ Single-pass minimum tracker
-*   **13. Remove Duplicates (#26)** $\rightarrow$ Two-pointer in-place unique compaction
-*   **14. Remove Element (#27)** $\rightarrow$ Two-pointer shifting
-*   **15. Maximum Subarray (#53)** $\rightarrow$ Kadane's dynamic prefix sum
-*   **16. Plus One (#66)** $\rightarrow$ Carry math array updates
-*   **17. Merge Sorted Array (#88)** $\rightarrow$ Three-pointer reverse insertion
-*   **18. Contains Duplicate (#217)** $\rightarrow$ HashSet frequency tracking
-*   **19. Majority Element (#169)** $\rightarrow$ Boyer-Moore voting threshold
-*   **20. Find Pivot Index (#724)** $\rightarrow$ Left/Right cumulative equilibrium
+*   **11. Two Sum (#1)**
+*   **12. Best Time to Buy & Sell Stock (#121)**
+*   **13. Remove Duplicates (#26)**
+*   **14. Remove Element (#27)**
+*   **15. Maximum Subarray (#53)**
+*   **16. Plus One (#66)**
+*   **17. Merge Sorted Array (#88)**
+*   **18. Contains Duplicate (#217)**
+*   **19. Majority Element (#169)**
+*   **20. Find Pivot Index (#724)**
 
 #### 🟡 [Level 3: Strings](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/Level3Strings.java) (Problems 21–30)
-*   **21. Valid Anagram (#242)** $\rightarrow$ Hashed frequency buckets
-*   **22. Reverse String (#344)** $\rightarrow$ Two-pointer buffer swaps
-*   **23. Reverse Words in a String III (#557)** $\rightarrow$ Character space checks
-*   **24. Length of Last Word (#58)** $\rightarrow$ Reverse spacer scanning
-*   **25. Longest Common Prefix (#14)** $\rightarrow$ Iterative horizontal slicing
-*   **26. Roman to Integer (#13)** $\rightarrow$ Subtraction Roman character states
-*   **27. Valid Palindrome (#125)** $\rightarrow$ Two-pointer character normalization
-*   **28. First Unique Character (#387)** $\rightarrow$ Double-pass bucket frequencies
-*   **29. Reverse Vowels of a String (#345)** $\rightarrow$ Two-pointer vowel swaps
-*   **30. Add Binary (#67)** $\rightarrow$ Reverse string carry calculations
+*   **21. Valid Anagram (#242)**
+*   **22. Reverse String (#344)**
+*   **23. Reverse Words in a String III (#557)**
+*   **24. Length of Last Word (#58)**
+*   **25. Longest Common Prefix (#14)**
+*   **26. Roman to Integer (#13)**
+*   **27. Valid Palindrome (#125)**
+*   **28. First Unique Character (#387)**
+*   **29. Reverse Vowels of a String (#345)**
+*   **30. Add Binary (#67)**
 
 #### 🟡 [Level 4: Searching](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/Level4Searching.java) (Problems 31–35)
-*   **31. Binary Search (#704)** $\rightarrow$ Iterative pivot splits ($O(\log N)$)
-*   **32. Search Insert Position (#35)** $\rightarrow$ Insert lower-bound range mapping
-*   **33. Guess Number Higher/Lower (#374)** $\rightarrow$ Binary search range guess checks
-*   **34. Square Root(x) (#69)** $\rightarrow$ Binary search integer midpoints
-*   **35. First Bad Version (#278)** $\rightarrow$ Binary boundary search division
+*   **31. Binary Search (#704)**
+*   **32. Search Insert Position (#35)**
+*   **33. Guess Number Higher/Lower (#374)**
+*   **34. Square Root(x) (#69)**
+*   **35. First Bad Version (#278)**
 
 #### 🟠 [Level 5: Recursion](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/Level5Recursion.java) (Problems 36–40)
-*   **36. Fibonacci Number (#509)** $\rightarrow$ Pure recursive relations
-*   **37. Power of Two (#231)** $\rightarrow$ Recursive divide-by-two bases
-*   **38. Climbing Stairs (#70)** $\rightarrow$ Memoized top-down recursion
-*   **39. Pow(x, n) (#50)** $\rightarrow$ Binary recursive exponentiation
-*   **40. Recursive Binary Search** $\rightarrow$ Recursive range splits
+*   **36. Fibonacci Number (#509)**
+*   **37. Power of Two (#231)**
+*   **38. Climbing Stairs (#70)**
+*   **39. Pow(x, n) (#50)**
+*   **40. Recursive Binary Search**
 
 #### 🟠 [Level 6: Intermediate](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/Level6Intermediate.java) (Problems 41–50)
-*   **41. Pascal's Triangle (#118)** $\rightarrow$ Dynamic array list generation
-*   **42. Pascal's Triangle II (#119)** $\rightarrow$ Single-row combination shifts
-*   **43. Happy Number (#202)** $\rightarrow$ Floyd's cycle-finding pointers
-*   **44. Missing Number (#268)** $\rightarrow$ Gauss math formula sum ($O(1)$ Space)
-*   **45. Move Zeroes (#283)** $\rightarrow$ Double pointer index shifting
-*   **46. Rotate Array (#189)** $\rightarrow$ Reverse array segment mapping
-*   **47. Third Maximum Number (#414)** $\rightarrow$ Size-restricted hash collection
-*   **48. Disappeared Numbers (#448)** $\rightarrow$ In-place index sign negation
-*   **49. Valid Mountain Array (#941)** $\rightarrow$ Up-down pointer check climbs
-*   **50. Monotonic Array (#896)** $\rightarrow$ Sorted direction flag comparisons
+*   **41. Pascal's Triangle (#118)**
+*   **42. Pascal's Triangle II (#119)**
+*   **43. Happy Number (#202)**
+*   **44. Missing Number (#268)**
+*   **45. Move Zeroes (#283)**
+*   **46. Rotate Array (#189)**
+*   **47. Third Maximum Number (#414)**
+*   **48. Disappeared Numbers (#448)**
+*   **49. Valid Mountain Array (#941)**
+*   **50. Monotonic Array (#896)**
 
 #### 🔴 [Hard Challenges](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/HardChallenges.java) (Problems 51–60)
-*   **51. Longest Palindromic Substring (#5)** $\rightarrow$ Expand around center check ($O(N^2)$)
-*   **52. Zigzag Conversion (#6)** $\rightarrow$ Multi-row StringBuilder mapping
-*   **53. String to Integer atoi (#8)** $\rightarrow$ Sign/Whitespace/Integer overflow validation
-*   **54. Container With Most Water (#11)** $\rightarrow$ Two-pointer area compaction
-*   **55. 3Sum (#15)** $\rightarrow$ Sorted array + two-pointer search
-*   **56. Generate Parentheses (#22)** $\rightarrow$ Backtracking open/close checks
-*   **57. Letter Combinations of Phone Number (#17)** $\rightarrow$ Backtracking phone matrix digits
-*   **58. Permutations (#46)** $\rightarrow$ Backtracking permutations list swapping
-*   **59. Combination Sum (#39)** $\rightarrow$ Backtracking element candidates sum
-*   **60. Sudoku Solver (#37)** $\rightarrow$ Grid checking backtracking
+*   **51. Longest Palindromic Substring (#5)**
+*   **52. Zigzag Conversion (#6)**
+*   **53. String to Integer atoi (#8)**
+*   **54. Container With Most Water (#11)**
+*   **55. 3Sum (#15)**
+*   **56. Generate Parentheses (#22)**
+*   **57. Letter Combinations of Phone Number (#17)**
+*   **58. Permutations (#46)**
+*   **59. Combination Sum (#39)**
+*   **60. Sudoku Solver (#37)**
+
+#### 🪐 [Interval Challenges](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/IntervalChallenges.java) (Problems 61–67)
+*   **61. Insert Interval (#57)** $\rightarrow$ Linear scans & merging
+*   **62. Merge Intervals (#56)** $\rightarrow$ Sort by start bounds
+*   **63. Non-overlapping Intervals (#435)** $\rightarrow$ Greedy removal counts
+*   **64. Interval List Intersections (#986)** $\rightarrow$ Dual-pointer intervals scan
+*   **65. Missing Ranges (#163)** $\rightarrow$ Single pass margin checks
+*   **66. Summary Ranges (#228)** $\rightarrow$ Sliding contiguous trackers
+*   **67. Min Balloon Burst Arrows (#452)** $\rightarrow$ Sorting end points greedy shots
+
+#### 🪐 [Stack & Simulation Challenges](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/StackSimulationChallenges.java) (Problems 68–79)
+*   **68. Find K Closest Elements (#658)** $\rightarrow$ Binary search range pointers
+*   **69. Reveal Cards Increasing (#950)** $\rightarrow$ Queue indices simulation
+*   **70. Task Scheduler (#621)** $\rightarrow$ Math frequency slots calculation
+*   **71. Simplify Path (#71)** $\rightarrow$ Split/Deque path normalization
+*   **72. Longest Absolute File Path (#388)** $\rightarrow$ Deep array tab index tracking
+*   **73. Exclusive Time of Functions (#636)** $\rightarrow$ ID stack bounds timer
+*   **74. Asteroid Collision (#735)** $\rightarrow$ Collision logic stack pops
+*   **75. Validate Stack Sequences (#946)** $\rightarrow$ Greedy simulation index push/pop
+*   **76. Remove Adjacent Duplicates II (#1209)** $\rightarrow$ Frequency stack char sweeps
+*   **77. Reverse Parentheses Substrings (#1190)** $\rightarrow$ Parentheses index stack swaps
+*   **78. Decode String (#394)** $\rightarrow$ Dual stacks (digits & strings) parsing
+*   **79. Min Parentheses Removes (#1249)** $\rightarrow$ Index stack filter invalid chars
+
+#### 🪐 [String Parsing Challenges](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/StringParsingChallenges.java) (Problems 80–84)
+*   **80. Compare Version Numbers (#165)** $\rightarrow$ Dual-pointer numeric dot splits
+*   **81. Validate IP Address (#468)** $\rightarrow$ IPv4 vs. IPv6 custom syntax parsing
+*   **82. Masking Personal Information (#831)** $\rightarrow$ Email/Phone sub-format masks
+*   **83. Remove Comments (#722)** $\rightarrow$ Single-line / block state machine filters
+*   **84. Solve the Equation (#640)** $\rightarrow$ Left/Right side parsing reduction
+
+#### 🪐 [Binary Search & Pointers Challenges](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/BinarySearchPointersChallenges.java) (Problems 85–91)
+*   **85. Remove Duplicates II (#80)** $\rightarrow$ Two-pointer boundary array compaction
+*   **86. Find Min in Rotated Array (#153)** $\rightarrow$ Pivot range binary search
+*   **87. Find Peak Element (#162)** $\rightarrow$ Range pivot peak checks binary search
+*   **88. Single Element Sorted Array (#540)** $\rightarrow$ Even/Odd index pair binary search
+*   **89. Search 2D Matrix (#74)** $\rightarrow$ Standard 1D-mapped binary search
+*   **90. Search 2D Matrix II (#240)** $\rightarrow$ Corner-start range reduction pointers
+*   **91. Kth Smallest Sorted Matrix (#378)** $\rightarrow$ Matrix counts binary search range
+
+#### 🪐 [Matrix Simulation Challenges](file:///Users/akshit/.gemini/antigravity-ide/scratch/java-dsa/leetcode/MatrixSimulationChallenges.java) (Problems 92–97)
+*   **92. Spiral Matrix II (#59)** $\rightarrow$ 4-direction edge boundary loops
+*   **93. Rotate Image (#48)** $\rightarrow$ In-place matrix transpose & row reverses
+*   **94. Game of Life (#289)** $\rightarrow$ Bit state transit matrices code mapping
+*   **95. Spiral Matrix III (#885)** $\rightarrow$ Step-increase spiral walking checks
+*   **96. Diagonal Traverse (#498)** $\rightarrow$ Toggle-direction index diagonals traversing
+*   **97. Spiral Matrix (#54)** $\rightarrow$ Linear boundary spiral traversing
 
 ---
 
@@ -180,9 +233,10 @@ Verify implementations locally by compiling and executing the test suites:
 # 1. Compile all source files
 javac java_demos/**/*.java dsa/linear/*.java dsa/trees/*.java dsa/graphs/*.java dsa/searching/*.java dsa/sorting/*.java leetcode/*.java
 
-# 2. Run Java OOP Demo (single-file execution)
-java java_demos/oop/OOPDemo.java
-
-# 3. Run Java Concurrency Demo (single-file execution)
-java java_demos/concurrency/ConcurrencyDemo.java
+# 2. Run new LeetCode Suites
+java leetcode.IntervalChallenges
+java leetcode.StackSimulationChallenges
+java leetcode.StringParsingChallenges
+java leetcode.BinarySearchPointersChallenges
+java leetcode.MatrixSimulationChallenges
 ```
